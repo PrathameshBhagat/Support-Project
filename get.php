@@ -1,6 +1,5 @@
 <?php
-//this gets data and sends it to get byte code
-//get data
+//get data 
 $curl = curl_init();
 $uname="a";//$_POST["username"];
 $lang="java";//$_POST["language"];
@@ -22,9 +21,8 @@ $data = '{"clientId": "bad4b3695b0c1e45eeb5ade8be594c4d","clientSecret":"354b658
 $data.=$lang;
 //SET language
 $data.='","script":"';
-$data.=fread($myfile,filesize($uname.".txt"));//set script
+$data.=fread($myfile,filesize('./text/'.$uname.".txt"));//set script
 $data.='","versionIndex":"0"}';
-
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 //for debug only!
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);

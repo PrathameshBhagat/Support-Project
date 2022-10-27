@@ -1,5 +1,4 @@
 <?php
-//this saves the code and sets it in a file
 $_POST = json_decode(file_get_contents('php://input'), true);
 $script=$_POST["script"];
 $uname=$_POST["username"];

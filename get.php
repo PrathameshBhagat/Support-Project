@@ -1,8 +1,8 @@
 <?php
-//get data 
+//get data
 $curl = curl_init();
-$uname="a";//$_POST["username"];
-$lang="java";//$_POST["language"];
+$uname=$_GET["username"];
+$lang=$_GET["language"];
 //READ FILE
 $myfile = fopen('./text/'.$uname.".txt", "r") or die("Unable to open file!");
 echo "<h1>";

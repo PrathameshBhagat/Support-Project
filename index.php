@@ -1,9 +1,9 @@
 <html lang="en">
-  <head>
+  <head>    
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body><div id="N1" align="left" ></div><div id="N2"  ></div>
     <form>
         <h3 class="question">   Write a program in hindi we will get it converted into java/python/c++/js/php code<br>
             <INPUT TYPE="TEXT" name="uname" placeholder="prathamesh " >&nbsp
@@ -12,7 +12,11 @@
             <input type="button" value="RUN" onclick="run()">
         </h3>
     <div class="editor-container" id="mycode">
-         <div type=text id="editor" name="pl">public class Main {public static void main(){System.out.println("hello world");}}</div>
+         <div type=text id="editor" name="pl">public class Main {
+public static void main(String [] a){
+    System.out.println("hello world");
+    }
+}</div>
         <textarea id="view"  style="margin-left:51%;height:100%" class=" ace_editor ace-cobalt ace_dark"></textarea>
     </div>
         </form>

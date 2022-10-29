@@ -1,11 +1,11 @@
-<html lang="en">
+<html lang="UTF-8">
   <head>    
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body><div id="N1" align="left" ></div><div id="N2"  ></div>
     <form>
-        <h3 class="question">   Write a program in hindi we will get it converted into java/python/c++/js/php code<br>
+        <h3 class="question">Write a program in hindi we will get it converted into java/python/c++/js/php code<br>
             <INPUT TYPE="TEXT" name="uname" placeholder="prathamesh " >&nbsp
             <INPUT TYPE="TEXT" name="lang" placeholder="java">
             <input type="button" value="SAVE" onclick="save()">

@@ -4,7 +4,7 @@ $curl = curl_init();
 $uname=$_GET["username"];
 $lang=$_GET["language"];
 //READ FILE
-$myfile = fopen('./text/'.$uname.".txt", "r") or die("Unable to open file!");
+$myfile = fopen('./text/'.$uname.".txt", "r") or die("Unable to open filemy file!");
 //HTTP REQUEST TO GET BYTECODE
 $url = "https://api.jdoodle.com/v1/execute";
 $curl = curl_init($url);
@@ -14,11 +14,10 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $scr=fread($myfile,filesize('./text/'.$uname.".txt"));
 $scr=str_replace("\n","\\n", $scr);
 $scr=str_replace("\"","\\\"", $scr);
-
 //decoding to programming language complete
 $cur = curl_init();
 curl_setopt_array($cur, array(
-  CURLOPT_URL => 'https://crptrest.000webhostapp.com/decode.php',
+  CURLOPT_URL => 'https://crptrest.000webhostapp.com/decode.php?lang='.$lang,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -51,6 +50,7 @@ $data.=$lang;
 $data.='","script":"';
 $data.=$scr;//set script
 $data.='","versionIndex":"0"}';
+echo $data;
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 //for debug only!
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
@@ -64,5 +64,5 @@ if (isset($r->error))   echo $r->error;
 //var_dump();
 //HTTP REQUEST END
 
-fclose($filer);
+fclose($myfile);
 ?>

@@ -3,7 +3,7 @@ let editor=ace.edit(editoro);
 editor.setTheme("ace/theme/cobalt");
 editor.session.setMode("ace/mode/java");
 function save(){
-    let m=editor.getValue();//m=m.replace("\n",'');
+    let m=editor.getValue();
     var a=m.toString();
     var xhr = new XMLHttpRequest();
     /* Code  when the  data completely  was a POST  request
@@ -15,7 +15,6 @@ function save(){
     xhr.setRequestHeader("Content-Type", "text/plain");
     xhr.onload = function () {
         console.log(this.response);
-        alert("sent to server");
         noti("SAVED","N1");
     };
     xhr.send(a);
@@ -38,6 +37,6 @@ function noti(data,n) {
   x.innerHTML=data;
   // Add the "show" class to DIV
   x.className = "show";
-  // After 3 seconds, remove the show class from DIV
+  // After sometime, remove the show class from DIV
   setTimeout(function(){ x.className = x.className.replace("show", "");x.textContent="";x.padding="0px;"; }, 5000);
 }

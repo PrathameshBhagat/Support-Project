@@ -14,6 +14,29 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $scr=fread($myfile,filesize('./text/'.$uname.".txt"));
 $scr=str_replace("\n","\\n", $scr);
 $scr=str_replace("\"","\\\"", $scr);
+
+//decoding to programming language complete
+$cur = curl_init();
+curl_setopt_array($cur, array(
+  CURLOPT_URL => 'https://crptrest.000webhostapp.com/decode.php',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>$scr,
+  CURLOPT_HTTPHEADER => array(
+    'Access-Control-Request-Headers: ',
+    'Content-Type: text/plain'
+  ),
+));
+$response = curl_exec($cur);
+curl_close($cur);
+$scr= $response;
+//decoding to programming language complete
+//Bytecode continue
 $headers = array(
    "Content-Type: application/json",
 );

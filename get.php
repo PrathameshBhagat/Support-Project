@@ -32,11 +32,15 @@ curl_setopt_array($cur, array(
     'Content-Type: text/plain'
   ),
 ));
+
 $response = curl_exec($cur);
+
 curl_close($cur);
 $scr= $response;
 //decoding to programming language complete
-//Bytecode continue
+
+
+
 $headers = array(
    "Content-Type: application/json",
 );

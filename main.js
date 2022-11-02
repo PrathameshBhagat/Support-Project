@@ -27,7 +27,7 @@ function run(){
     xhr.onload = function () {
         console.log(this.response);
         document.getElementById("view").innerHTML=this.response.toString();
-         noti("COMPILED","N1");
+         noti("COMPILED","N2");
     };console.log(a); 
     xhr.send(a);
 }

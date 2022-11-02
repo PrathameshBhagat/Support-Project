@@ -50,7 +50,6 @@ $data.=$lang;
 $data.='","script":"';
 $data.=$scr;//set script
 $data.='","versionIndex":"0"}';
-echo $data;
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 //for debug only!
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);

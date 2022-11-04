@@ -1,7 +1,13 @@
+ace.require("ace/ext/language_tools");
 let editoro = document.querySelector("#editor"); 
 let editor=ace.edit(editoro);
 editor.setTheme("ace/theme/cobalt");
-editor.session.setMode("ace/mode/java");
+editor.session.setMode("ace/mode/javaa");
+editor.setOptions({
+       enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: true
+});
 function save(){
     let m=editor.getValue();
     var a=m.toString();

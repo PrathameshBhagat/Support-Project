@@ -1,4 +1,4 @@
-<html lang="UTF-8">
+<html >
   <head>    
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
@@ -35,6 +35,8 @@ public class Main{
         <div id="view"  style="height:100%;font:150% monospace;color:#ff0" class=" ace_editor ace-cobalt ace_dark"></div>
     </div>
         </form>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.3/ace.js" integrity="sha512-yARx+3W/tyZPXyRfZ4DLRdj0rXF2yjH2D6bKpPslrl1c62Q6ZC808L++ft9jkzIN9vmLtQCFsYNrzoOE/Im2Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   <script src="main.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.3/ace.js" integrity="sha512-yARx+3W/tyZPXyRfZ4DLRdj0rXF2yjH2D6bKpPslrl1c62Q6ZC808L++ft9jkzIN9vmLtQCFsYNrzoOE/Im2Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.5/ext-language_tools.min.js" ></script>
+    <script src="mode-javaa.js"></script></script>   <script src="main.js"></script> 
   </body>
 </html>

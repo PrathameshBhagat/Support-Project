@@ -8,7 +8,7 @@
   <body><div id="N1" align="left" ></div><div id="N2" style="left:10px" ></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>
     <form>
-        <h3 class="question">Write a program <--in hindi we will get it converted into java/python/c++/js/php code--></--in><br>
+        <h3 class="question">Write a program <!--in hindi we will get it converted into java/python/c++/js/php code--><br>
             <INPUT TYPE="TEXT" name="uname" placeholder="prathamesh " >&nbsp
             <select name="lang"><option value="java">JAVA</option><option value="python">PYTHON</option><option value="php">PHP</option><option value="javascript">JAVASCRIPT</option><option value="c">C</option></select>
              <input type="button" value="SAVE" onclick="save()">

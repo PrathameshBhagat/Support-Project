@@ -543,6 +543,19 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
             }, {
                 token: "constant.language.boolean",
                 regex: "(?:true|false)\\b"
+            },/*{   
+                token: "constant.language.boolean",
+                regex: "(?:सच|बाप)"
+            }
+            ,
+            */{  
+                token: "keyword",
+                regex: "(?:तंत्र|बाहर|कक्षा|सार्वजनिक|स्थिर|"+
+                "रिक्त|जरूरी|डोर|आम|समूह|"+
+                "प्रिन्ट|प्रिंट|"+
+                "अगर|वरना|बदलो|बदल|हैतो|केलिए|जबतक|करो|"+
+                "है तो|के लिए|जब तक"
+                +")"
             }, {
                 regex: "(open(?:\\s+))?module(?=\\s*\\w)",
                 token: "keyword",

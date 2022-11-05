@@ -15,7 +15,12 @@
             <input type="button" value="RUN" onclick="run()">
         </h3>
     <div class="editor-container" id="mycode">
-         <div type=text id="editor" name="pl"><!--सार्वजनिक कक्षा  Main {सार्वजनिक स्थिर रिक्त जरूरी (डोर  [] a){    अगर (44>3 )System.out.println("hell ld");}}}-->/*THIS IS A CUSTOM CODE EDITOR FOR A NEW PROGRAMMING LANGUAGE 
+         <div type=text id="editor" name="pl"><!--सार्वजनिक कक्षा  Main {
+            सार्वजनिक स्थिर रिक्त जरूरी (डोर  [] a){
+                अगर (44>3 )
+                तंत्र.बाहर.प्रिंट("hell ld");
+            }
+        }-->/*THIS IS A CUSTOM CODE EDITOR FOR A NEW PROGRAMMING LANGUAGE 
 IT HAS COMPLETELY DIFFERENT SYNTAXING AND EFFICIENT COMPILATION TIME.
 THE DECODER ,COMPILER ,AND VIRTUAL MACINE IS READY.
 JUST WAITING FOR DOCUMENTATION TO COMPLETE AFTER WHICH WE WOULD LAUNCH IT 

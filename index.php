@@ -1,14 +1,15 @@
 <html >
   <head>    
-    <title>Document</title>
+    <title>Editor</title>
     <link rel="stylesheet" href="style.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>
   </head>
-  <body><div id="N1" align="left" ></div><div id="N2" style="left:10px" ></div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
+  <body><div id="N1" align="left" ></div><div id="N2" style="left:10px" ></div>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>
     <form>
-        <h3 class="question">Write a program <!--in hindi we will get it converted into java/python/c++/js/php code--><br>
+        <h3 class="question">Write a program in hindi we will get it converted into java/python/c++/js/php code in<br>
             <INPUT TYPE="TEXT" name="uname" placeholder="prathamesh " >&nbsp
             <select name="lang"><option value="java">JAVA</option><option value="python">PYTHON</option><option value="php">PHP</option><option value="javascript">JAVASCRIPT</option><option value="c">C</option></select>
              <input type="button" value="SAVE" onclick="save()">
@@ -42,6 +43,9 @@ public class Main{
         </form>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.3/ace.js" integrity="sha512-yARx+3W/tyZPXyRfZ4DLRdj0rXF2yjH2D6bKpPslrl1c62Q6ZC808L++ft9jkzIN9vmLtQCFsYNrzoOE/Im2Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.5/ext-language_tools.min.js" ></script>
-    <script src="mode-javaa.js"></script></script>   <script src="main.js"></script> 
+<script src="snippets-javaa.js"></script>
+ 
+  <script src="mode-javaa.js"></script> 
+      <script src="main.js"></script> 
   </body>
 </html>

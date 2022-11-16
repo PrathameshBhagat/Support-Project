@@ -8,6 +8,17 @@ editor.setOptions({
         enableSnippets: true,
         enableLiveAutocompletion: true
 });
+var snippetManager = ace.require("ace/snippets").snippetManager;
+        var config = ace.require("ace/config");
+         ace.config.loadModule("ace/snippets/javaa", function(m) {
+        if (m) {
+          snippetManager.files[editor.session.$mode.$id] = m;          
+          m.snippets = snippetManager.parseSnippetFile(m.snippetText);
+          // or do this if you already have them parsed
+        snippetManager.register(m.snippets, m.scope);
+          }
+        });
+
 function save(){
     let m=editor.getValue();
     var a=m.toString();

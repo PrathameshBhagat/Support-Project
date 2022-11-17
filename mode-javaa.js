@@ -553,7 +553,7 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 token: "storage.type",
                 regex: "(?:अगर|या|"+
                 "केलिए|जब-तक|जबतक|जब|करो|बदले|बदलो|यदि|"+
-                "जारी|भंग|आम|जबतक|करो)"
+                "जारी|भंग|आम|करो)"
             },
             {  
                 token: "variable.language",
@@ -567,8 +567,8 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 "प्रिंट)"
             },{
                 token: "constant.numeric",
-                regex: "(?:(ल|ब|फ))"
-            },
+                regex:"(?:[0-9]+ल|ब|फ)"
+                            },
 
              {
                 regex: "(open(?:\\s+))?module(?=\\s*\\w)",

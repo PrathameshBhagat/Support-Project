@@ -48,14 +48,15 @@ r("करो","do");
 r("जारी","continue");
 r("भंग","break");
 r("आम","default");
-
+r("","");
 
 //single words and booleans
 r("ल","l");
 r("ब","d");
 r("फ","f");
 r("सच","true");
-
+r("","");
+r("",""); 
 
 }  /**/
 if($l=="php"){

@@ -39,6 +39,17 @@ snippet bhang\n\tभंग\n\
 snippet aam\n\tआम\n\
 snippet karo\n\tकरो\n\
 snippet kar\n\tकरो{\n\t\t${2:/*कोड काम करेगा*/}\n\t} जब (${1:/*जब ये होगा*/})\n\
+snippet tantra\n\tतंत्र\n\
+snippet bahar\n\tबाहर\n\
+snippet kaksha\n\tकक्षा\n\
+snippet kak\n\tकक्षा ${1:Animal}{${2:मै जानवर हु}}\n\
+snippet sarvajanik\n\tसार्वजनिक\n\
+snippet sthir\n\tस्थिर\n\
+snippet rikt\n\tरिक्त\n\
+snippet jaruri\n\tजरूरी\n\
+snippet jar+\n\tसार्वजनिक स्थिर रिक्त जरूरी(डोर[] ${1:args}){\n\t\t${2:pri}\n\t}\n\
+snippet print\n\tप्रिंट\n\
+snippet pri\n\tतंत्र.बाहर.प्रिंट(${1:\'hello\'});\n\
 ";
  exports.scope = "javaa";
 });

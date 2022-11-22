@@ -567,7 +567,7 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 "प्रिंट)"
             },{
                 token: "constant.numeric",
-                regex:"(?:[0-9]+ल|ब|फ)"
+                regex:"(?:ल|ब|फ)"
                             },
 
              {

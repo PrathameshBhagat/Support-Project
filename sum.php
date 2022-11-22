@@ -1,16 +1,18 @@
 <html >
   <head>    
-    <title>Editor</title><!---->
+    <title>Editor</title>
     <link rel="stylesheet" href="style.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>
   </head>
-  <body><div id="N1" align="left" ></div><div id="N2" style="left:10px" ></div>
+  <body>
+<meta http-equiv="Content-Type" content="text/html; charset='UTF-8'" >
+    <div id="N1" align="left" ></div><div id="N2" style="left:10px" ></div>
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>
-    <form>
+    <form accept-charset="utf-8">
         <h3 class="question">Write a program in hindi we will get it converted into java/python/c++/js/php code in<br>
-            <INPUT TYPE="TEXT" name="uname" placeholder="prathamesh " >&nbsp
+            <INPUT TYPE="TEXT" name="uname" placeholder="prathamesh" >&nbsp
             <select name="lang"><option value="java">JAVA</option><option value="python">PYTHON</option><option value="php">PHP</option><option value="javascript">JAVASCRIPT</option><option value="c">C</option></select>
              <input type="button" value="SAVE" onclick="save()">
             <input type="button" value="RUN" onclick="run()">
@@ -38,14 +40,22 @@ public class Main{
 }
 }
          </div><h3></h3>
-        <div id="view"  style="height:100%;font:150% monospace;color:#ff0" class=" ace_editor ace-cobalt ace_dark"></div>
+       <div id="view"  style="height:100%;font:150% monospace;color:#ff0" class=" ace_editor ace-cobalt ace_dark"></div>
+
     </div>
         </form>
+   <!--      <form id="codeForm" autocomplete="off" style="margin:0px;display:none;" action="https://try.w3schools.com/try_java.php?" method="post" accept-charset="utf-8" target="F">
+              <input type="hidden" name="code" id="code">
+            </form>
+<script>document.getElementById('code').value="public class Main {public static void main(String[] अ){अ=new String[5];अ[0]=String.valueOf(456); System.out.println(4);System.out.println(5.4500+\"नजकंकज\"+अ[0]);}}"</script>
+
+
+<button onclick="  document.getElementById('codeForm').submit(); console.log(document.getElementById('code').value);">fdjhdgs</button><iframe name ="F"></iframe>
+ -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.3/ace.js" integrity="sha512-yARx+3W/tyZPXyRfZ4DLRdj0rXF2yjH2D6bKpPslrl1c62Q6ZC808L++ft9jkzIN9vmLtQCFsYNrzoOE/Im2Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.5/ext-language_tools.min.js" ></script>
 <script src="snippets-javaa.js"></script>
- 
-  <script src="mode-javaa.js"></script> 
+ <script src="mode-javaa.js"></script> 
       <script src="main.js"></script> 
   </body>
 </html>

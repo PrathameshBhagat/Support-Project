@@ -42,7 +42,9 @@ snippet kar\n\tकरो{\n\t\t${2:/*कोड काम करेगा*/}\n\t}
 snippet tantra\n\tतंत्र\n\
 snippet bahar\n\tबाहर\n\
 snippet kaksha\n\tकक्षा\n\
-snippet kak\n\tकक्षा ${1:Animal}{${2:मै जानवर हु}}\n\
+snippet kak\n\tकक्षा ${1:Animal}{${2://मै जानवर कक्षा हु}}\n\
+snippet samuh\n\tसमूह\n\
+snippet sam\n\tसमूह ${1:Animal}{${2://मै जानवर समूह हु}}\n\
 snippet sarvajanik\n\tसार्वजनिक\n\
 snippet sthir\n\tस्थिर\n\
 snippet rikt\n\tरिक्त\n\

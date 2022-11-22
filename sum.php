@@ -1,6 +1,6 @@
 <html >
   <head>    
-    <title>Editor</title>
+    <title>Editor</title><!---->
     <link rel="stylesheet" href="style.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>

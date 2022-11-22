@@ -43,8 +43,18 @@ function run(){
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = function () {
         console.log(this.response);
-        document.getElementById("view").innerHTML=this.response.toString();
-         noti("COMPILED","N2");
+        var result=this.response.toString();
+        //remove extras from server
+        result=result.replace(/<style>/g,"<may>");
+        result=result.replace(/<[/]style>/g,"</may>");       
+        result=result.replace(/<pre>|<[/]pre>/g,"");
+        //now remove the contents of style 
+        document.getElementById("view").innerHTML=result;
+        //remove extras from server and a style tag
+        var remove=document.getElementsByTagName("may")[0];
+        remove.parentNode.removeChild(remove);     
+        //notiyfy
+        noti("COMPILED","N2");
     };console.log(a); 
     xhr.send(a);
 }

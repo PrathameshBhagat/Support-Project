@@ -42,10 +42,11 @@ function run(){
     xhr.open("GET", "get.php?username="+document.getElementsByName("uname")[0].value.toString()+"&language="+document.getElementsByName("lang")[0].value.toString());
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = function () {
-        console.log(this.response);
+        console.log("Run: "+this.response);
         var result=this.response.toString();
         //remove extras from server
         result=result.replace(/<style>/g,"<may>");
+        result=result.replace(/[\r\n]/g,"<br>");
         result=result.replace(/<[/]style>/g,"</may>");       
         result=result.replace(/<pre>|<[/]pre>/g,"");
         //now remove the contents of style 

@@ -554,7 +554,7 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
                 regex: "(?:अगर|या|"+
                 "केलिए|जब-तक|जबतक|जब|करो|बदले|बदलो|यदि|"+
                 "जारी|भंग|आम|करो)"
-            },
+            },            
             {  
                 token: "variable.language",
                 regex: "(?:अंक|बाइट|"+
@@ -568,8 +568,7 @@ define("ace/mode/doc_comment_highlight_rules", ["require", "exports", "module", 
             },{
                 token: "constant.numeric",
                 regex:"(?:ल|ब|फ)"
-                            },
-
+            },
              {
                 regex: "(open(?:\\s+))?module(?=\\s*\\w)",
                 token: "keyword",

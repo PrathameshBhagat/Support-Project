@@ -51,6 +51,7 @@ snippet rikt\n\tरिक्त\n\
 snippet jaruri\n\tजरूरी\n\
 snippet jar+\n\tसार्वजनिक स्थिर रिक्त जरूरी(डोर[] ${1:args}){\n\t\t${2:pri}\n\t}\n\
 snippet print\n\tप्रिंट\n\
+snippet vapas\n\tवापस\n\
 snippet pri\n\tतंत्र.बाहर.प्रिंट(${1:\'hello\'});\n\
 ";
  exports.scope = "javaa";

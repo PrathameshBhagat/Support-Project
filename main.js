@@ -37,6 +37,7 @@ function save(){
     xhr.send(a);
 }
 function run(){    
+    document.getElementById("view").innerHTML="Compiling.... \n(कार्य प्रगति पर है....) ";
     var xhr = new XMLHttpRequest();
     var a='{"language":"'+document.getElementsByName("lang")[0].value.toString()+'","username":"'+document.getElementsByName("uname")[0].value.toString()+'"}';
     xhr.open("GET", "get.php?username="+document.getElementsByName("uname")[0].value.toString()+"&language="+document.getElementsByName("lang")[0].value.toString());
@@ -50,7 +51,7 @@ function run(){
         result=result.replace(/<[/]style>/g,"</may>");       
         result=result.replace(/<pre>|<[/]pre>/g,"");
         //now remove the contents of style 
-        document.getElementById("view").innerHTML=result;
+        document.getElementById("view").innerHTML=result;console.log("Run: "+result);
         //remove extras from server and a style tag
         var remove=document.getElementsByTagName("may")[0];
         remove.parentNode.removeChild(remove);     

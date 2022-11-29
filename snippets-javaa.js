@@ -44,12 +44,16 @@ snippet bahar\n\tबाहर\n\
 snippet kaksha\n\tकक्षा\n\
 snippet kak\n\tकक्षा ${1:Animal}{${2://मै जानवर कक्षा हु}}\n\
 snippet samuh\n\tसमूह\n\
-snippet sam\n\tसमूह ${1:Animal}{${2://मै जानवर समूह हु}}\n\
+snippet sam\n\tसमूह ${1:Animal/जानवर}{${2://मै जानवर समूह हु}}\n\
+snippet varg\n\tवर्ग\n\
+snippet var\n\tवर्ग ${1:Animal/जानवर}{${2://मै जानवर समूह हु}}\n\
 snippet sarvajanik\n\tसार्वजनिक\n\
 snippet sthir\n\tस्थिर\n\
 snippet rikt\n\tरिक्त\n\
 snippet jaruri\n\tजरूरी\n\
 snippet jar+\n\tसार्वजनिक स्थिर रिक्त जरूरी(डोर[] ${1:args}){\n\t\t${2:pri}\n\t}\n\
+snippet nayi\n\tनई\n\
+snippet nay\n\tनई ${1:मुख्य}(${2:मूल्य});\n\
 snippet print\n\tप्रिंट\n\
 snippet vapas\n\tवापस\n\
 snippet pri\n\tतंत्र.बाहर.प्रिंट(${1:\'hello\'});\n\

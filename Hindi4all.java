@@ -20,16 +20,16 @@ public class Hindi4all  implements Runnable{
 	    return ""; 
 	}
 	private void writeIt(String name ,String data){
-		if(data!=""&&data!=null&&name!=""&&name!=null) try { 
+		if(data!=""&&data!=null&&name!=""&&name!=null) try {name=name.replace(".h4j",".java"); 
       	FileOutputStream fos = new FileOutputStream(name,false);//true to append
       	byte[] b =data.getBytes(); //converts string into bytes  
       	fos.write(b); //writes bytes into file  
       	fos.close(); //close the file  
     	}
     	catch(Exception e) {System.out.println("Exception Occurred:");e.printStackTrace();}  
-		else {System.out.println("File name "+name+"or Contents"+data+" not found (or is empty/null)");}
+		else {System.out.println("File name "+name+" or its Contents "+data+" not found (or is empty/null)");}
 	}
-	private  String process(String data ){
+	private String process(String data ){
 		try{
 			URL url = new URL("https://crptrest.000webhostapp.com/decode.php?lang=java");
 			HttpsURLConnection http = (HttpsURLConnection)url.openConnection();
@@ -49,26 +49,42 @@ public class Hindi4all  implements Runnable{
 	   		br.close();
 			http.disconnect();return sb.toString();
 		} catch (MalformedURLException e) {
-         System.out.println("Internet is not connected");
+         System.out.println("Internet is not connected");System.exit(0);
       } catch (IOException e) {
-         System.out.println("Internet is not connected");
+         System.out.println("Internet is not connected");System.exit(0);
       }catch(Exception e) {System.out.println("Exception Occurred:");e.printStackTrace();}  
 		return null;
 	}
 	@Override
 	public void run() {writeIt(cname,process(read(cname)));this.done++;}
-	Hindi4all(int hjghjhj){}
+	Hindi4all(float hjghjhj){}
 	public Hindi4all(String ... a){
 	    for (int i=0;i<a.length;i++ )
 	    {	//writeIt(a[i],process(read(a[i])));
-	    	Hindi4all h=new Hindi4all(0);
+	    	Hindi4all h=new Hindi4all(0.0f);
 	    	h.cname=a[i];
 	    	Thread t= new Thread(h);
 		t.start();
     	}
     	String jkbk="";
-    	//While loop to stop main from returning before other threads get completed 
     	while(true){jkbk=String.valueOf(this.done)+a.length;if(this.done>=a.length)break;else {}}
 	    	//System.out.println("\tthis.done"+this.done+"\ta.length"+a.length);
 	}
+/*	public Hindi4all(int h4a,String ...a){
+		for (int i=0;i<a.length;i++ )
+	   {	//writeIt(a[i],process(read(a[i])));
+	    	Hindi4all h=new Hindi4all(0.0f);
+	    	h.cname=a[i];
+	    	Thread t= new Thread(h);
+		t.start();
+    	}
+    	String jkbk="";
+    	while(true){jkbk=String.valueOf(this.done)+a.length;if(this.done>=a.length)break;else {}}
+	   try {String [] cmm={"javac"};
+	   File cmmf=new File(System.getProperty("user.dir"));
+	   	Process pro=Runtime.getRuntime().exec(cmm,null,cmmf);}
+	   Error :file not found even if file exists;
+
+	   catch(Exception e){e.printStackTrace();}
+	}*/
 }

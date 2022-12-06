@@ -17,7 +17,9 @@ snippet bad\n\tबड़ा  ${1:a} = ${2:5.0000};\n\
 snippet va\n\tवर्ण\n\
 snippet var\n\tवर्ण  ${1:a} = '${2:a}';\n\
 snippet boolean\n\tबूलियन\n\
-snippet bo\n\tबूलियन  ${1:a} = ${2:सच};\n\
+snippet bo\n\tबूलियन ${1:a} = ${2:सच};\n\
+snippet dohara\n\tदोहरा\n\
+snippet doh\n\tदोहरा ${1:a} = ${2:सच};\n\
 snippet dor\n\tडोर\n\
 snippet dorr\n\tडोर  ${1:a} = \"${2:hello}\";\n\
 snippet agar\n\tअगर\n\
@@ -52,6 +54,27 @@ snippet sthir\n\tस्थिर\n\
 snippet rikt\n\tरिक्त\n\
 snippet jaruri\n\tजरूरी\n\
 snippet jar+\n\tसार्वजनिक स्थिर रिक्त जरूरी(डोर[] ${1:args}){\n\t\t${2:pri}\n\t}\n\
+\
+\
+\
+snippet sar\n\tसार\n\
+snippet antraprushta\n\tअंतरापृष्ठ\n\
+snippet ant\n\tअंतरापृष्ठ ${1:कुत्ता}{${2:मेरीविधि}();}\n\
+snippet niji\n\tनिजी\n\
+snippet surakshit\n\tसुरक्षित\n\
+snippet is\n\tइस\n\
+snippet ucch\n\tउच्च\n\
+snippet virasega\n\tविरासेगा\n\
+snippet vir\n\tविरासेगा ${1:मेराकुत्ता}{${2:pri}}\n\
+snippet koshish\n\tकोशिश\n\
+snippet kos\n\tकोशिश {${1:'कोशिश करे'}}\n\tपकड़े(${2:त्रुटि} ${3:मेरीत्रुटि}){\n\tतंत्र.बाहर.प्रिंट(${4:मेरीत्रुटि});\n\t} अंतमे ${5:तंत्र.बाहर.प्रिंट(${6:'कोशिश समाप्त '}) }\n\
+snippet pakde\n\tपकड़े\n\
+snippet pak\n\tपकड़े(${2:त्रुटि} ${3:मेरीत्रुटि}){\n\tतंत्र.बाहर.प्रिंट(${4:मेरीत्रुटि});\n\t} \n\
+snippet antme\n\tअंतमे {\n\t}\n\
+snippet truti\n\tत्रुटि\n\
+snippet fakee\n\tफेके\n\
+snippet fak\n\tफेके नई ${1:त्रुटि}(${2:'कुछ गलती पाई गई है |'});\n\
+\
 snippet nayi\n\tनई\n\
 snippet nay\n\tनई ${1:मुख्य}(${2:मूल्य});\n\
 snippet print\n\tप्रिंट\n\

@@ -16,7 +16,7 @@ curl_setopt_array($cur, array(
 
 
 
-  CURLOPT_URL => 'http://localhost/Editor-Support-main/decode.php?lang='.$lang,
+  CURLOPT_URL => 'http://localhost/Editor-Support-main/decode.php?comp=online&lang='.$lang,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -73,6 +73,7 @@ if (isset($r->error))   echo $r->error;
 //HTTP REQUEST END
 */
 //CODE FOR MY API 
+
 $url = "https://try.w3schools.com/try_java.php?";
 
 $curl = curl_init($url);
@@ -91,6 +92,31 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 
 $resp = curl_exec($curl);
 curl_close($curl);
-echo ($resp);
+echo ($resp);/*
+$url = "https://api.jdoodle.com/v1/execute";
+
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+$headers = array(
+   "Content-Type: application/json;charset=utf-8"
+);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+$scr=str_replace("\n","\\n", $scr);
+$scr=str_replace("\"","\\\"", $scr);
+$data = '{"clientId": "bad4b3695b0c1e45eeb5ade8be594c4d","clientSecret":"354b6582f76fab8cf0151a56493c8407ab7b7f3d74632ed4f02bc2edcec1f8a9","language":"';
+$data.=$lang;
+//SET language
+$data.='","script":"';
+$data.=$scr;//set script
+$data.='","versionIndex":"0"}';
+
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+
+$resp = curl_exec($curl);
+curl_close($curl);
+echo ($resp);*/
 fclose($myfile);
 ?>

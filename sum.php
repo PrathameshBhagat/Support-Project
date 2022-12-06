@@ -1,12 +1,12 @@
 <html >
-  <head>    
+  <head>   
     <title>Editor</title>
     <link rel="stylesheet" href="style.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>
   </head>
   <body>
-<meta http-equiv="Content-Type" content="text/html; charset='UTF-8'" >
+<meta http-equiv="Content-Type" content="text/html;charset='UTF-8'" >
     <div id="N1" align="left" ></div><div id="N2" style="left:10px" ></div>
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506596207312408"
      crossorigin="anonymous"></script>
@@ -40,7 +40,7 @@ public class Main{
 }
 }
          </div><h3></h3>
-       <div id="view"  style="height:100%;font:150% monospace;color:#ff0" class=" ace_editor ace-cobalt ace_dark"></div>
+       <div id="view" style="height:100%;font:150% monospace;color:#ff0" class=" ace_editor ace-cobalt ace_dark"></div>
 
     </div>
         </form>
